@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function armstrong()
+        {
+            var x,arm=0,rem,org;
+            x=parseInt(document.getElementById("a").value);
+            org=x;
+            while(x!=0)
+            {
+                rem=x%10;
+                arm=arm+rem*rem*rem;
+                x=Math.floor(x/10);
+            }
+            if(org==arm)
+            {
+                window.alert("Armstrong Number");
+            }
+            else
+            {
+                window.alert("Not Armstrong Number!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Armstrong number or Not??</h1>
+    Enter Number:<input type="text" id="a"><br>
+    <button type="button" onclick="armstrong()">Check</button>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Array Elements in Reverse</title>
+</head>
+<body>
+    <h1>Array Elements (Reversed):</h1>
+    <div id="output"></div>
+
+    <script>
+        
+        const myArray = [1, 2, 3, 4, 5];
+
+        
+        const outputElement = document.getElementById("output");
+
+        
+        function displayArrayElementsInReverse(array) {
+            outputElement.innerHTML = "";
+            for (let i = array.length - 1; i >= 0; i--) {
+                const element = array[i];
+                const elementElement = document.createElement("p");
+                elementElement.textContent = "Element " + (array.length - i) + ": " + element;
+                outputElement.appendChild(elementElement);
+            }
+        }
+        displayArrayElementsInReverse(myArray);
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Array Elements</title>
+</head>
+<body>
+
+    Enter array elements:<input type="text" id="userinput">
+    <br><br>
+    <button type="button"onclick="displayArray()">Display Array</button>
+
+    <script>
+        function displayArray()
+        {
+            var input=document.getElementById('userinput').value;
+            var array=input.split(",");
+            var result="Array elements are:";
+            for(var i=0;i<array.length;i++){
+                result+=array[i];
+                if(i<array.length-1){
+                    result+=", ";
+                }
+            }
+            window.alert(result);
+        }
+    </script>
+</body>
+</html>

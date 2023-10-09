@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=<device-width>,">
+        <title>Positive or Negative</title>
+        <script>
+            function num()
+            {
+                var x,y,z;
+                x=parseInt(document.getElementById("a").value);
+                y=parseInt(document.getElementById("b").value);
+                z=parseInt(document.getElementById("c").value);
+                if(x>y && x>z)
+                {
+                    document.writeln("X is greater");
+                }
+                else if(y>x && y>z)
+                {
+                    document.writeln("Y is greater");
+                }
+                else
+                {
+                    document.writeln("Z is greater");
+                }
+                
+            }
+            
+        </script>
+    </head>
+    <body>
+        <h1>Numbers</h1>
+        Enter number1:<input type ="text" id="a"><br>
+        Enter number2:<input type ="text" id="b"><br>
+        Enter number3:<input type ="text" id="c"><br>
+        
+        <button type="button" onclick="num()">check</button>
+    </body>
+</html>
