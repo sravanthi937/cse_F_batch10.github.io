@@ -1,0 +1,543 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body { 
+	background: lightblue; 
+	overflow-x:hidden;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+.container {
+    position: relative;
+    margin: 0px auto;
+    padding: 50px 0;
+    clear: both;
+}
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 1210px;
+    }
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+    .container {
+        width: 1030px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .container {
+        width: 682px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container {
+        width: 428px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .container {
+        width: 320px;
+        margin: 0 auto;
+    }
+}
+
+
+  
+.mcd-menu {
+  list-style: none;
+  padding: 10px;
+  margin: 60px;
+  background: #fff22a;
+ 
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  
+ 
+  width: 250px;
+  
+}
+.mcd-menu li {
+  position: relative;
+  
+}
+.mcd-menu li a {
+  display: block;
+  text-decoration: none;
+  padding: 12px 20px;
+  color: red;
+  text-align: left;
+  height: 36px;
+  position: relative;
+  border-bottom: 1px solid #EEE;
+ 
+}
+.mcd-menu li a i {
+ 
+  float: left;
+  font-size: 20px;
+  margin: 0 10px 0 0;
+ 
+}
+.mcd-menu li a p {
+  float: left;
+  margin: 0 ;
+}
+
+.mcd-menu li a strong {
+  display: block;
+  text-transform: uppercase;
+}
+
+.mcd-menu li:hover > a {
+  color: green;
+}
+
+.mcd-menu li a.active:after {
+  content: "";
+  position: absolute;
+  top: 42%;
+  right: 0;
+  border-right: 5px solid #e67e22;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+
+.mcd-menu li ul,
+.mcd-menu li ul li ul {
+  position: absolute;
+  height: auto;
+  min-width: 300px;
+  padding: 0;
+  margin: 0;
+  background: #FFF;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 500ms linear;
+  -o-transition: all 500ms linear;
+  -ms-transition: all 500ms linear;
+  -moz-transition: all 500ms linear;
+  -webkit-transition: all 500ms linear;
+  
+  z-index: 1000;
+ 
+  left:280px;
+  top: 0px;
+  border-left: 4px solid blue;
+border-bottom: 4px solid blue;
+border-top: 4px solid blue;
+}
+.mcd-menu li ul:before {
+  content: "";
+  position: absolute;
+
+  top: 75px;
+  left: -9px;
+  border-right: 5px solid #e67e22;
+  border-bottom: 5px solid transparent;
+  border-top: 5px solid transparent;
+ 
+}
+.mcd-menu li:hover > ul,
+.mcd-menu li ul li:hover > ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+ 
+}
+.mcd-menu li ul li a {
+  padding: 10px;
+  text-align: left;
+  border: 0;
+  border-bottom: 1px solid #EEE;
+  
+  height: auto;
+}
+.mcd-menu li ul li a i {
+  font-size: 16px;
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+.mcd-menu li ul li ul {
+  left: 230px;
+  top: 0;
+  border: 0;
+  border-left: 4px solid blue;
+border-bottom: 4px solid blue;
+border-top: 4px solid blue;
+}  
+.mcd-menu li ul li ul:before {
+  content: "";
+  position: absolute;
+  top: 15px;
+
+  border-right: 5px solid blue;
+  border-bottom: 5px solid transparent;
+  border-top: 5px solid transparent;
+}
+.mcd-menu li ul li:hover > ul {
+  top: 0px;
+  left: 200px;
+}
+
+
+* {box-sizing: border-box;}
+
+
+
+.sr img{
+position:absolute;
+margin-top:-8px;
+margin-left:30px;
+border-radius:37px;
+}
+.clg b{
+position:absolute;
+margin-top:10px;
+margin-left:159px;
+}
+.cc b{
+position:absolute;
+margin-top:2px;
+margin-left:499px;
+}
+
+.img1 img{
+position:absolute;
+margin-top:12px;
+margin-left:500px;
+border-radius:40px;
+}
+.ab p{
+margin-left:1000px;
+color:yellow; 
+font-size:18px;"
+}
+.img2 img{
+position:absolute;
+margin-top:-45px;
+margin-left:1450px;
+border-radius:35px;
+}
+body{
+   background-image: url('https://static.zollege.in/public/college_data/images/appImage/16480128291481800720K41.jpg?tr=h-200,w-400,c-force');
+ background-size: cover;
+  background-repeat: no-repeat;
+background-attachment:fixed;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 7px 8px;
+  margin-top: 8px;
+  margin-right: 6px;
+  background: skyblue;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width:80%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+
+.vertical-menu {
+  width: 500px;
+  height: 150px;
+  overflow-y: auto;
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.vertical-menu a.active {
+  background-color: #04AA6D;
+  color: white;
+	
+</style>
+</head>
+<body>
+<fieldset style=" background-color:black;padding:11px 0px 0px 0px;">
+<div class="sr"><a href="#"><img  src="https://sraap.in/index_files/sr-university-logo_round.png" width="110" height="105" /></a></div>
+<div class="clg"><a href=#"><b style="color:white;font-size:18px;">SR<br>UNIVERSITY</b></a></div> <div class="container">
+<div class="cc"><a href=#"><b style="color:white;font-size:22px;">CLASS TIME-TABLES</b></a></div> 
+</fieldset>
+<nav>
+		<ul class="mcd-menu">
+			<li>
+				<a href=""><strong>Time tables</strong></a>
+			<ul>
+			<li><a href="#">CSE</a>
+				
+				<ul>
+					<li>
+					    <a href="#">I-YEAR</a>
+
+<ul >
+
+<div class="vertical-menu">
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I A1.png">I-A1</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I B1.png">I-B1</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I C1.png">I-C1</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I D1.png">I-D1</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I E1.png">I-E1</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I F1.png">I-F1</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I G1.png">I-G1</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I H1.png">I-H1</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I I1.png">I-I1</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I A2.png">I-A2</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I B2.png">I-B2</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I C2.png">I-C2</a></li>							
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I D2.png">I-D2</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I E2.png">I-E2</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I F2.png">I-F2</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I G2.png">I-G2</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I H2.png">I-H2</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I I2.png">I-I2</a></li>
+</div>				
+</div>
+</ul>
+   </li>
+
+
+
+    <li>
+	<a href="#">II-YEAR</a>
+
+
+<ul>
+<div class="vertical-menu">
+
+<li><a href="#"><a href="C:\8086\Final_Update_2_year_Sections_TT's[1]_1\Final Update 2 year Sections TT's\2CSE-A.html">II CSE-A</a></a></li>
+<li><a href="#"><a href="C:\8086\Final_Update_2_year_Sections_TT's[1]_2\Final Update 2 year Sections TT's\2CSE-B.html">II CSE-B</a></a></li>
+<li><a href="#"><a href="C:\8086\Final_Update_2_year_Sections_TT's[1]_2\Final Update 2 year Sections TT's\2CSE-C.html">II CSE-C</a></a></li>
+<li><a href="#"><a href="C:\8086\Final_Update_2_year_Sections_TT's[1]_2\Final Update 2 year Sections TT's\2CSE-D.html">II CSE-D</a></a></li>
+<li><a href="#"><a href="C:\8086\Final_Update_2_year_Sections_TT's[1]_2\Final Update 2 year Sections TT's\2CSE-E.html">II CSE-E</a></a></li>
+<li><a href="#"><a href="C:\8086\Final_Update_2_year_Sections_TT's[1]_2\Final Update 2 year Sections TT's\2CSE-F.html">II CSE-F</a></a></li>
+<li><a href="#"><a href="C:\8086\Final_Update_2_year_Sections_TT's[1]_2\Final Update 2 year Sections TT's\2CSE-G.html">II CSE-G</a></li>
+<li><a href="#"><a href="C:\8086\Final_Update_2_year_Sections_TT's[1]_2\Final Update 2 year Sections TT's\2CSE-H.html">II CSE-H</a></li>
+<li><a href="#"><a href="C:\8086\Final_Update_2_year_Sections_TT's[1]_2\Final Update 2 year Sections TT's\2CSE-I.html">II CSE-I</a></li>
+<li><a href="#"><a href="C:\8086\Final_Update_2_year_Sections_TT's[1]_2\Final Update 2 year Sections TT's\2CSE-J.html">II CSE-J</a></li>
+<li><a href="#"><a href="C:\8086\Final_Update_2_year_Sections_TT's[1]_2\Final Update 2 year Sections TT's\2CSE-K.html">II CSE-K</a></li>
+<li><a href="#"><a href="C:\8086\Final_Update_2_year_Sections_TT's[1]_2\Final Update 2 year Sections TT's\2CSE-L.HTML">II CSE-L</a></li>
+<li><a href="#"><a href="C:\8086\Final_Update_2_year_Sections_TT's[1]_2\Final Update 2 year Sections TT's\2CSE-M.HTML">II CSE-M</a></li>
+<li><a href="#"><a href="C:\8086\Final_Update_2_year_Sections_TT's[1]_2\Final Update 2 year Sections TT's\2CSE-N.html">II CSE-N</a></li>
+<li><a href="#"><a href="C:\8086\Final_Update_2_year_Sections_TT's[1]_2\Final Update 2 year Sections TT's\2-CSE-O.html">II CSE-O</a></li>
+<li><a href="#"><a href="C:\8086\Final_Update_2_year_Sections_TT's[1]_2\Final Update 2 year Sections TT's\2CSE-AIML-A.html">II CSE AIML-A</a></li>
+<li><a href="#"><a href="C:\8086\Final_Update_2_year_Sections_TT's[1]_2\Final Update 2 year Sections TT's\2CSE-AIML-B.html">II CSE AIML-B</a></li>
+<li><a href="#"><a href="C:\8086\Final_Update_2_year_Sections_TT's[1]_2\Final Update 2 year Sections TT's\2CSE-AIML-C.html">II CSE AIML-C</a></li>
+<li><a href="#"><a href="C:\8086\Final_Update_2_year_Sections_TT's[1]_2\Final Update 2 year Sections TT's\2CSE-AIML-D.html">II CSE AIML-D</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\II AIML E.png">II CSE AIML-E</a></li>
+<li><a href="#"><a href="C:\8086\Final_Update_2_year_Sections_TT's[1]_2\Final Update 2 year Sections TT's\2 CSE DS&CS.html">IIDS&CS</a></li>
+</div>
+</ul>
+</li>
+			  
+<li>
+<a href="#">III-YEAR</a>
+<ul>
+<div class="vertical-menu">
+
+
+			<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\III A.png" >III CSE-A</a></li>
+		         <li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\III B.png">III CSE-B</a></li>
+		<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\III C.png">III CSE-C</a></li>
+		<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\III D.png">III CSE-D</a></li>
+       		<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\III E.png">III CSE-E</a></li>
+	<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\III F.png">IIICSE-F</a></li>
+		<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\III G.png">III CSE-G</a></li>
+	<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\III H.png">IIICSE-H</a></li>
+		<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\III I.png">III CSE-I</a></li>
+	<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\III J.png">III CSE-J</a></li>
+		<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\III K.png">III CSE-K</a></li>
+	<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\III AIML A.png">III CSE AIML-A</a></li>
+		<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\III AIML B.png">IIICSE AIML-B</a></li>
+		<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\III AIML C.png">III CSE AIML-C</a></li>
+		<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\III DS&CS.png">IIIDS&CS</a></li>	
+						</ul>
+						</li>
+</div>
+<li>
+   <a href="#">IV-YEAR</a>
+	
+					</li>
+					</ul>
+
+<li><a href="#">ECE</a>
+     <ul>
+        <li><a href="#">I-YEAR</a>
+<ul>
+<div class="vertical-menu">
+
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I A1.png">I-A1</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I B1.png">I-B1</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I C1.png">I-C1</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I D1.png">I-D1</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I E1.png">I-E1</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I F1.png">I-F1</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I G1.png">I-G1</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I H1.png">I-H1</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I I1.png">I-I1</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I A2.png">I-A2</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I B2.png">I-B2</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I C2.png">I-C2</a></li>							
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I D2.png">I-D2</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I E2.png">I-E2</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I F2.png">I-F2</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I G2.png">I-G2</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I H2.png">I-H2</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I I2.png">I-I2</a></li>					
+</div>
+</ul>
+   </li>
+   </li>
+	    <li><a href="#">II-YEAR</a>
+<ul>
+<div class="vertical-menu">
+
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\II ECE-A.png">II ECE-A</a></a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\II ECE-B.png">II ECE-B</a></a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\II ECE-C.png">II ECE-C</a></a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\II ECE-D.png">II ECE-D</a></a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\II ECE-E.png">II ECE-E</a></a></li>
+</div>
+</ul>
+</li>
+</li>
+
+	   <li> <a href="#">III-YEAR</a>
+
+	    <a href="#">IV-YEAR</a>
+	</li>
+     </ul>
+</li>
+<li><a href="#">EEE</a>
+     <ul>
+        <li><a href="#">I-YEAR</a>
+<ul>
+<div class="vertical-menu">
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I A1.png">I-A1</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I B1.png">I-B1</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I C1.png">I-C1</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I D1.png">I-D1</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I E1.png">I-E1</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I F1.png">I-F1</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I G1.png">I-G1</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I H1.png">I-H1</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I I1.png">I-I1</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I A2.png">I-A2</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I B2.png">I-B2</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I C2.png">I-C2</a></li>							
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I D2.png">I-D2</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I E2.png">I-E2</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I F2.png">I-F2</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I G2.png">I-G2</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I H2.png">I-H2</a></li>
+<li><a href="#"><a href="C:\Users\raziy\Pictures\Screenshots\I I2.png">I-I2</a></li>					
+</div>
+</ul>
+   </li>
+   </li>
+
+	    <a href="#">II-YEAR</a>
+	    <a href="#">III-YEAR</a>
+	    <a href="#">IV-YEAR</a>
+	</li>
+     </ul>
+</li>
+
+</li>
+</ul>
+</li>
+
+
+</ul>
+</li>
+</ul>
+
+
+</nav>
+</div>
+
+</body>
+</html>
